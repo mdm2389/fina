@@ -26,7 +26,12 @@
 			</li>
 		</ul>
 		<ul class="nav pull-right">
-			<li><%= link_to 'Dive Deeper', '#' %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "Modifications", edit_user_registration_path %></li>
+          <li><%= link_to "Back to the Real World", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+			<li><%= link_to 'Dive Deeper', new_user_session_path %></li>
+          <% end %>
 		</ul>
       </div>
  
