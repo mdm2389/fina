@@ -10,9 +10,11 @@
 		<%= render 'layouts/header' %>
 
 	<div class="container-fluid">
+		
 		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 		<% end %>
+		<%= image_tag("fina.png", :size => "260x180") %>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 

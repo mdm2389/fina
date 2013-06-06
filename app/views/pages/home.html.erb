@@ -1,21 +1,39 @@
-<div class="center hero-unit">
-<h1>fina</h1>
-	
-	<p>
-	Forging: to move forward gradually or steadily; to create a desired shape through heating and molding  
-	</p>
-	
-	<p>	
-	Intelligence: the ability to perceive, reason, understand and apply knowledge or skill; wisdom 
-	</p>	
-	
-	<p>
-	Nobility: the quality of being noble in character, mind, birth or rank; benevolence, altruistism, grandeur  
-	</p>
-	
-	<p> 
-	Artistry: creative skill or ability; those who by virtue of imagination and talent, create works of value 
-	</p>
+<div class="container">
+
+<div id="homepage-carousel" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="http://placehold.it/1200x480" alt="" />
+         <div class="carousel-caption">
+        <p>forging: to move forward gradually or steadily; to create a desired shape through heating and molding </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="" />
+      <div class="carousel-caption">
+        <p>intelligence: the ability to perceive, reason and apply knowledge; wisdom, understanding </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="" />
+      <div class="carousel-caption">
+        <p>nobility: the quality of being noble in character, mind, birth or rank; benevolence, altruistism, grandeur </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="" />
+      <div class="carousel-caption">
+        <p>artistry: creative ability; those who by virtue of imagination and talent, create works of value </p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#homepage-carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#homepage-carousel" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+
 	
 	<p>
 	<%= link_to "Become an Aspirant", new_user_registration_path, class: "btn btn-medium btn-inverse" %>
