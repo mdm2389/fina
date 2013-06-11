@@ -28,7 +28,7 @@
 		<ul class="nav pull-right">
         <% if user_signed_in? %>
           <li><%= link_to "Modifications", edit_user_registration_path %></li>
-          <li><%= link_to "Go Create Your Reality", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
           <% else %>
 			<li><%= link_to 'Dive Deeper', new_user_session_path %></li>
           <% end %>
