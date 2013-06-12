@@ -1,0 +1,22 @@
+<div class="row">
+	<div class= "span6 offset3">
+		<div class= "well">
+			<p>
+				<%= @article.title %>
+			</p>
+			<p>
+				<%= @article.user_id %>
+			</p>
+			<p>
+				<%= @article.content %>
+			</p>
+
+			<% if current_user == @article.user %>
+			<%= link_to 'Edit', edit_article_path(@article) %> |
+			<% end %>
+			<%= link_to 'Back', articles_path %>
+
+		</div>
+	</div>
+</div>	
+

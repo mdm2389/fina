@@ -1,4 +1,7 @@
 Fina::Application.routes.draw do
+  resources :articles
+
+
   get "users/show"
 
   resources :pins
