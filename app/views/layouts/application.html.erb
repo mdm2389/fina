@@ -14,7 +14,7 @@
 		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 		<% end %>
-		<%= image_tag("fina.png", :size => "280x130") %>
+			<%# image_tag("fina.png", :size => "280x130") %>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 
