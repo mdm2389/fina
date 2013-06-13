@@ -1,11 +1,12 @@
 <div class="row">
 	<div class= "span6 offset3">
 		<div class= "well">
-			<p>
-				<%= link_to "Read original article", @link.url %>
-			</p>
+			
 			<p>
 				<%= @link.description %>
+			</p>
+			<p>
+				<%= link_to "Explore Link", @link.url %>
 			</p>
 			<p>
 				<%= @link.user.name %>

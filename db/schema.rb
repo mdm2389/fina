@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(:version => 20130612232500) do
   create_table "articles", :force => true do |t|
     t.integer  "user_id"
     t.string   "title"
-    t.string   "content"
+    t.text     "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "links", :force => true do |t|
     t.string   "url"
-    t.string   "description"
+    t.text     "description"
     t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
@@ -39,10 +39,6 @@ ActiveRecord::Schema.define(:version => 20130612232500) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "image_remote_url"
-    t.string   "link_file_name"
-    t.string   "link_content_type"
-    t.integer  "link_file_size"
-    t.datetime "link_updated_at"
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
