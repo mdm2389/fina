@@ -1,18 +1,17 @@
 Fina::Application.routes.draw do
+  devise_for :users
+  resources :links
   resources :articles
-
-
-  get "users/show"
-
   resources :pins
 
-
-  devise_for :users
   match 'users/:id' => 'users#show', as: :user
 
   get 'about' => 'pages#about'
 
+  get 'communalsparks' => 'pages#communalsparks'
+
   root :to => 'pages#home'
+
 
   
 

@@ -11,5 +11,6 @@ class User < ActiveRecord::Base
 
   has_many :pins, :dependent => :destroy 
   has_many :articles, :dependent => :destroy 
+  has_many :links, :dependent => :destroy 
  
 end

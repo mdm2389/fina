@@ -3,5 +3,6 @@ class UsersController < ApplicationController
   	@user = User.find(params[:id])
   	@pins = @user.pins
   	@articles =@user.articles
+  	@links = @user.links
   end
 end
