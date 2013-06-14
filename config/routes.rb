@@ -3,12 +3,15 @@ Fina::Application.routes.draw do
   resources :links
   resources :articles
   resources :pins
+  resources :users
+
 
   match 'users/:id' => 'users#show', as: :user
 
   get 'about' => 'pages#about'
 
   get 'communalsparks' => 'pages#communalsparks'
+  get 'sharesomething'=> 'pages#sharesomething'
 
   root :to => 'pages#home'
 

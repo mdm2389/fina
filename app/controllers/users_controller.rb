@@ -5,4 +5,9 @@ class UsersController < ApplicationController
   	@articles =@user.articles
   	@links = @user.links
   end
+
+  def index 
+  	@users = User.all
+  end
+
 end
