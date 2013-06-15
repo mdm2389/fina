@@ -66,6 +66,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    masonry-rails (0.2.0)
+      rails
     mime-types (1.23)
     multi_json (1.7.5)
     nokogiri (1.5.10)
@@ -138,6 +140,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
+  masonry-rails
   paperclip (~> 3.0)
   pg
   rails (= 3.2.13)

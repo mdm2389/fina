@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.masonry.min.js
 //= require bootstrap
+//= require masonry/jquery.masonry
+//= require masonry/jquery.imagesloaded.min
+//= require masonry/modernizr-transitions
 //= require_tree .
