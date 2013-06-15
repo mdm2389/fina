@@ -1,18 +1,17 @@
-
-  	<div class="box"> 
-  		<p>
-  			<strong>
-  	<%= link_to link.description, link %>
-  			</strong>
-  		</p>
-  	<p>
-  	<%= link_to "Explore Link", link.url %>
-	<p>
-			Posted by <%= link_to link.user.name, link.user %>
-	</p>
-    <% if current_user == link.user %>
-    	<%= link_to 'Edit', edit_link_path(link) %>
-    	<%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %>
+<div class="box"> 
+  <p>
+    <strong>
+      <%= link_to link.description, link %>
+    </strong>
+  </p>
+  <p>
+    <%= link_to "Explore Link", link.url %>
+  </p>
+  <p>
+    Posted by <%= link_to link.user.name, link.user %>
+  </p>
+  <% if current_user == link.user %>
+    <%= link_to 'Edit', edit_link_path(link) %>
+    <%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
 </div>
-  

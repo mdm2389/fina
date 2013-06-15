@@ -1,18 +1,14 @@
 <div class="box">
-
-<strong>
   <p class="title">
-  <%= link_to article.title, article %>
-</strong>
+    <strong>
+      <%= link_to article.title, article %>
+    </strong>
   </p>
-     <p>
-        Posted by <%= link_to article.user.name, article.user %> 
-    </p>
-    
-    <% if current_user == article.user %>
-        <p>
-          <%= link_to 'Edit', edit_article_path(article) %></td>
-          <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?'} %>
-        </p>
-    <% end %>
-</tr>
+  <p>
+    Posted by <%= link_to article.user.name, article.user %> 
+  </p>  
+  <% if current_user == article.user %>
+    <%= link_to 'Edit', edit_article_path(article) %></td>
+    <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?'} %>
+  <% end %>
+</div>

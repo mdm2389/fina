@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @pins = Pin.order("created_at desc")
   end
 
   def about
