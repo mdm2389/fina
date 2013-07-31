@@ -8,6 +8,7 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem "aws-sdk"
+gem 'link_thumbnailer'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

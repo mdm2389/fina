@@ -19,4 +19,8 @@ class PagesController < ApplicationController
     @article = Article.new
   end
 
+  def happenings
+    @events = Event.order("created_at desc")
+  end
+
 end

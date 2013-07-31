@@ -1,0 +1,20 @@
+<div class="box">
+  <p class="title">
+    <strong>
+      <%= link_to event.title, event %>
+    </strong>
+  <p>
+    When <%= event.when %> 
+  </p> 
+  <p>
+    Where <%= event.where %> 
+  </p>   
+  </p>
+  <p>
+    Posted by <%= link_to event.user.name, event.user %> 
+  </p>  
+  <% if current_user == event.user %>
+    <%= link_to 'Edit', edit_event_path(event) %></td>
+    <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?'} %>
+  <% end %>
+</div>

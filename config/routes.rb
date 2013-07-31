@@ -4,14 +4,15 @@ Fina::Application.routes.draw do
   resources :articles
   resources :pins
   resources :users
+  resources :events
 
 
   match 'users/:id' => 'users#show', as: :user
 
   get 'about' => 'pages#about'
-
   get 'communalsparks' => 'pages#communalsparks'
   get 'sharesomething'=> 'pages#sharesomething'
+  get 'happenings'=> 'pages#happenings'
 
   root :to => 'pages#home'
 

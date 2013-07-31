@@ -1,0 +1,17 @@
+<%= simple_form_for(@event, html: {class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+
+    <%= f.input :title %>
+    <%= f.input :when, as: :text, input_html: {rows: "9"} %>
+    <%= f.input :where, as: :text, input_html: {rows: "9"} %>
+    <%= f.input :details, as: :text, input_html: {rows: "9"} %>
+    
+
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-inverse" %>
+  </div>
+<% end %>
+
+

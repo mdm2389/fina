@@ -15,7 +15,8 @@ class User < ActiveRecord::Base
 
   has_many :pins, :dependent => :destroy 
   has_many :articles, :dependent => :destroy 
-  has_many :links, :dependent => :destroy 
+  has_many :links, :dependent => :destroy
+  has_many :events, :dependent => :destroy
 
   has_attached_file :image, styles: { medium: "320x240>"}
  

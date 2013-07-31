@@ -14,18 +14,16 @@
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
       	<ul class ="nav">
-      		<li>
-          	<%= link_to "Home", root_path %>
-      		</li>
-      		<li>
-        		<%= link_to "About", about_path %> 
-    			</li>
+      		<li><%= link_to "Home", root_path %></li>
+      		<li><%= link_to "About", about_path %> </li>
+          <li><%= link_to "Gallery", users_path %></li>
     		</ul>
     		<ul class="nav pull-right">
           <% if user_signed_in? %>
-            <li><%= link_to "Aspirant Gallery", users_path %></li>
-            <li><%= link_to "Communal Sparks", communalsparks_path %></li>
-            <li><%= link_to "Share Something", sharesomething_path %></li>
+
+            <li><%= link_to "Happenings", events_path %></li>
+            <li><%= link_to "Sparks", communalsparks_path %></li>
+            <li><%= link_to "Share", sharesomething_path %></li>
             <li><%= link_to "Modifications", edit_user_path(current_user) %></li>
             <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
           <% else %>
